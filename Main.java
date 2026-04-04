@@ -45,3 +45,27 @@ class Square{
         System.out.println("Perimeter:"+perimeter);
     }
 }
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        
+        Square s1=new Square(23);
+        Square s2=new Square(12);
+
+        s1.calcArea();
+        s1.calcPerim();
+        s2.calcArea();
+        s2.calcPerim();
+
+        Square s3=new Square(s1);
+        System.out.println("Square 1:");
+        s1.displayInfo();
+        System.out.println("Square 2:");
+        s2.displayInfo();
+        System.out.println("Square 3");
+        s3.displayInfo();
+        sc.close();
+    }
+    
+}
