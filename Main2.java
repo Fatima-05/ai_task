@@ -61,7 +61,7 @@ class RoomReservation {
             stayCost=days*2000;
         else
             stayCost=days*1000;
-            bill=serviceCost+stayCost;
+        bill=serviceCost+stayCost;
     }
 
     void calculateTax(){
