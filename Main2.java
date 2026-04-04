@@ -57,15 +57,15 @@ class RoomReservation {
     void calculateBill(){
         double serviceCost=services*1000*days;
         double stayCost;
-        if (days<5)
+        if(days<5)
             stayCost=days*2000;
         else
             stayCost=days*1000;
-        bill=serviceCost+stayCost;
+            bill=serviceCost+stayCost;
     }
 
     void calculateTax(){
-        if (bill<10000)
+        if(bill<10000)
             tax=500;
         else
             tax=bill*0.02;
@@ -79,11 +79,11 @@ class RoomReservation {
         System.out.println("Bill:"+bill);
         System.out.println("Tax:"+tax);
 
-        if (ranking==1)
+        if(ranking==1)
             System.out.println("Ranking: Worst");
-        else if (ranking>=2 && ranking<=4)
+        else if(ranking>=2 && ranking<=4)
             System.out.println("Ranking: Medium");
-        else if (ranking==5)
+        else if(ranking==5)
             System.out.println("Ranking: Best");
     }
 }
