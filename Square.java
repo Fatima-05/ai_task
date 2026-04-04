@@ -14,4 +14,16 @@ class Square{
         this.area=S.area;
         this.perimeter=S.perimeter;
     }
+
+    int getSideLen(){
+        return sideLen;
+    }
+
+    float getArea(){
+        return area;
+    }
+
+    float getPerim(){
+        return perimeter;
+    }
 }
