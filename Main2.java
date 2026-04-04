@@ -87,3 +87,18 @@ class RoomReservation {
             System.out.println("Ranking: Best");
     }
 }
+public class Main2 {
+    public static void main(String[] args) {
+        RoomReservation R1 = new RoomReservation();
+
+        R1.setId(2312);
+        R1.setName("Fatu");
+        R1.setServices(3);
+        R1.setDays(10);
+        R1.setRanking(5);
+    
+        R1.calculateBill();
+        R1.calculateTax();
+        R1.displayInfo();
+    }
+}
