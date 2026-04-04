@@ -25,4 +25,26 @@ class RoomReservation {
     void setRanking(int ranking){ 
         this.ranking=ranking; 
     }
+
+    int getId(){ 
+        return id; 
+    }
+    String getName(){ 
+        return name; 
+    }
+    int getServices(){
+        return services; 
+    }
+    int getDays(){ 
+        return days; 
+    }
+    double getBill(){ 
+        return bill; 
+    }
+    double getTax(){ 
+        return tax;
+    }
+    int getRanking(){ 
+        return ranking; 
+    }
 }
