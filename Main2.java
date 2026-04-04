@@ -29,22 +29,61 @@ class RoomReservation {
     int getId(){ 
         return id; 
     }
+
     String getName(){ 
         return name; 
     }
+
     int getServices(){
         return services; 
     }
+
     int getDays(){ 
         return days; 
     }
+
     double getBill(){ 
         return bill; 
     }
+
     double getTax(){ 
         return tax;
     }
+
     int getRanking(){ 
         return ranking; 
+    }
+
+    void calculateBill(){
+        double serviceCost=services*1000*days;
+        double stayCost;
+        if (days<5)
+            stayCost=days*2000;
+        else
+            stayCost=days*1000;
+        bill=serviceCost+stayCost;
+    }
+
+    void calculateTax(){
+        if (bill<10000)
+            tax=500;
+        else
+            tax=bill*0.02;
+    }
+
+    void displayInfo(){
+        System.out.println("ID:"+id);
+        System.out.println("Name:"+name);
+        System.out.println("Services:"+services);
+        System.out.println("Days:"+days);
+        System.out.println("Bill:"+bill);
+        System.out.println("Tax:"+tax);
+
+        if (ranking==1)
+            System.out.println("Ranking: Worst");
+        else if (ranking>=2 && ranking<=4)
+            System.out.println("Ranking: Medium");
+        else if (ranking==5)
+            System.out.println("Ranking: Best");
     }
 }
