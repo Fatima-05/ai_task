@@ -26,4 +26,22 @@ class Square{
     float getPerim(){
         return perimeter;
     }
+
+    void setSideLen(int sideLen){
+        this.sideLen=sideLen;
+    }
+
+    void calcArea(){
+        area=sideLen*sideLen;
+    }
+
+    void calcPerim(){
+        perimeter=4*sideLen;
+    }
+
+    void displayInfo(){
+        System.out.println("Side Length:"+sideLen);
+        System.out.println("Area:"+area);
+        System.out.println("Perimeter:"+perimeter);
+    }
 }
