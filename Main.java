@@ -73,6 +73,20 @@ public class Main {
 
         System.out.println("Non Decimal Part: " + nonDecimal);
         System.out.println("Decimal Part: " + decimal);
+
+        int num = s2.getSideLen();
+        if (num >= 100 && num <= 999) {
+            int d1 = num / 100;
+            int d2 = (num / 10) % 10;
+            int d3 = num % 10;
+
+            if (d1 == d2 && d2 == d3)
+                System.out.println("Yes");
+            else
+                System.out.println("No");
+        } else {
+            System.out.println("No");
+        }
     }
     
 }
