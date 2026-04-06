@@ -66,6 +66,13 @@ public class Main {
         System.out.println("Square 3");
         s3.displayInfo();
         sc.close();
+
+        float area = s1.getArea();
+        int nonDecimal = (int) area;
+        float decimal = area - nonDecimal;
+
+        System.out.println("Non Decimal Part: " + nonDecimal);
+        System.out.println("Decimal Part: " + decimal);
     }
     
 }
