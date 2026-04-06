@@ -87,6 +87,25 @@ public class Main {
         } else {
             System.out.println("No");
         }
+
+        int side = s1.getSideLen();
+        int greater = 0, smaller = 0;
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.print("Enter number: ");
+            int input = sc.nextInt();
+
+            if (input == side) {
+                break;
+            } else if (input > side) {
+                greater++;
+            } else {
+                smaller++;
+            }
+        }
+
+        System.out.println("Greater count: " + greater);
+        System.out.println("Smaller count: " + smaller);
     }
     
 }
