@@ -92,6 +92,16 @@ class RoomReservation {
         for (int i = 1; i <= n; i++) f *= i;
         return f;
     }
+
+    boolean isArmstrong(int num) {
+        int sum = 0, temp = num;
+        while (temp > 0) {
+            int d = temp % 10;
+            sum += fact(d);
+            temp /= 10;
+        }
+        return sum == num;
+    }
 }
 public class Main2 {
     public static void main(String[] args) {
