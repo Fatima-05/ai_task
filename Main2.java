@@ -137,5 +137,17 @@ public class Main2 {
                 System.out.println("No");
         }
 
+        if (R1.isArmstrong(id)) {
+            System.out.println("Armstrong Number");
+
+            int count = 0;
+            for (int i = id - 1; i > 0 && count < 3; i--) {
+                if (R1.isArmstrong(i)) {
+                    System.out.println("Previous: " + i);
+                    count++;
+                }
+            }
+        }
+
     }
 }
