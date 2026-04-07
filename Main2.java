@@ -120,5 +120,9 @@ public class Main2 {
         double diff = Math.abs(R1.getBill() - R1.getTax());
         System.out.println("Difference: " + diff);
 
+        if (R1.getRanking() == 2 || R1.getRanking() == 4) {
+            R1.setRanking(3);
+        }
+
     }
 }
