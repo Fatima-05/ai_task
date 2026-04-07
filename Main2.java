@@ -149,5 +149,15 @@ public class Main2 {
             }
         }
 
+        int n = R1.getServices();
+        int value = n;
+
+        for (int i = 1; i <= 100; i++) {
+            System.out.print(value + " ");
+
+            if (i % 3 == 0)
+                value += n;
+        }
+
     }
 }
