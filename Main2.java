@@ -116,7 +116,9 @@ public class Main2 {
         R1.calculateBill();
         R1.calculateTax();
         R1.displayInfo();
+
+        double diff = Math.abs(R1.getBill() - R1.getTax());
+        System.out.println("Difference: " + diff);
+
     }
 }
-
-//Assalam-o-Alaikum Sir, I'm really sorry for the late submission and I'm thankful for your understanding and granting me extra time for these task due to my brother's wedding. I've only attempt the main exercise and not the additional tasks as that is only what i had energy to attempt at the moment, hopefully you'll accept these. JazakAlllahu Khair! 
