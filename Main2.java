@@ -124,5 +124,18 @@ public class Main2 {
             R1.setRanking(3);
         }
 
+        int id = R1.getId();
+        String s = String.valueOf(id);
+
+        if (s.length() % 2 == 1) {
+            char last = s.charAt(s.length() - 1);
+            char mid = s.charAt(s.length() / 2);
+
+            if (last == mid)
+                System.out.println("Yes");
+            else
+                System.out.println("No");
+        }
+
     }
 }
